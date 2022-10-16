@@ -1,0 +1,436 @@
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: Started gunicorn daemon.
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: [2022-10-16 17:18:27 +0300] [6098] [INFO] Starting gunicorn 20.1.0
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: [2022-10-16 17:18:27 +0300] [6098] [INFO] Listening at: unix:/run/gunicorn.sock (6098)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: [2022-10-16 17:18:27 +0300] [6098] [INFO] Using worker: sync
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]: [2022-10-16 17:18:27 +0300] [6099] [INFO] Booting worker with pid: 6099
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]: [2022-10-16 17:18:27 +0300] [6099] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6099]: [2022-10-16 17:18:27 +0300] [6099] [INFO] Worker exiting (pid: 6099)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]: [2022-10-16 17:18:27 +0300] [6100] [INFO] Booting worker with pid: 6100
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]: [2022-10-16 17:18:27 +0300] [6100] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6100]: [2022-10-16 17:18:27 +0300] [6100] [INFO] Worker exiting (pid: 6100)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]: [2022-10-16 17:18:27 +0300] [6101] [INFO] Booting worker with pid: 6101
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]: [2022-10-16 17:18:27 +0300] [6101] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: [2022-10-16 17:18:27 +0300] [6098] [WARNING] Worker with pid 6100 was terminated due to signal 15
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6101]: [2022-10-16 17:18:27 +0300] [6101] [INFO] Worker exiting (pid: 6101)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 202, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     self.manage_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 551, in manage_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     self.spawn_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 623, in spawn_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     time.sleep(0.1 * random.random())
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     self.reap_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: During handling of the above exception, another exception occurred:
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/bin/gunicorn", line 8, in <module>
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     sys.exit(run())
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 67, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 231, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     super().run()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 72, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     Arbiter(self).run()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 229, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     self.halt(reason=inst.reason, exit_status=inst.exit_status)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 342, in halt
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     self.stop()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 393, in stop
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     time.sleep(0.1)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     self.reap_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6098]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=1/FAILURE[0m
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: Started gunicorn daemon.
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: [2022-10-16 17:18:27 +0300] [6102] [INFO] Starting gunicorn 20.1.0
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: [2022-10-16 17:18:27 +0300] [6102] [INFO] Listening at: unix:/run/gunicorn.sock (6102)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: [2022-10-16 17:18:27 +0300] [6102] [INFO] Using worker: sync
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]: [2022-10-16 17:18:27 +0300] [6104] [INFO] Booting worker with pid: 6104
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]: [2022-10-16 17:18:27 +0300] [6104] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6104]: [2022-10-16 17:18:27 +0300] [6104] [INFO] Worker exiting (pid: 6104)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]: [2022-10-16 17:18:27 +0300] [6105] [INFO] Booting worker with pid: 6105
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]: [2022-10-16 17:18:27 +0300] [6106] [INFO] Booting worker with pid: 6106
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]: [2022-10-16 17:18:27 +0300] [6106] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]: [2022-10-16 17:18:27 +0300] [6105] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6105]: [2022-10-16 17:18:27 +0300] [6105] [INFO] Worker exiting (pid: 6105)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6106]: [2022-10-16 17:18:27 +0300] [6106] [INFO] Worker exiting (pid: 6106)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 202, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     self.manage_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 551, in manage_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     self.spawn_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 623, in spawn_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     time.sleep(0.1 * random.random())
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     self.reap_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: During handling of the above exception, another exception occurred:
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/bin/gunicorn", line 8, in <module>
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     sys.exit(run())
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 67, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 231, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     super().run()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 72, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     Arbiter(self).run()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 229, in run
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     self.halt(reason=inst.reason, exit_status=inst.exit_status)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 342, in halt
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     self.stop()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 393, in stop
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     time.sleep(0.1)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     self.reap_workers()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6102]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=1/FAILURE[0m
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru systemd[1]: Started gunicorn daemon.
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:27 +0300] [6107] [INFO] Starting gunicorn 20.1.0
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:27 +0300] [6107] [INFO] Listening at: unix:/run/gunicorn.sock (6107)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:27 +0300] [6107] [INFO] Using worker: sync
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]: [2022-10-16 17:18:27 +0300] [6108] [INFO] Booting worker with pid: 6108
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]: [2022-10-16 17:18:27 +0300] [6108] [ERROR] Exception in worker process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]: Traceback (most recent call last):
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     worker.init_process()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     self.load_wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     self.callable = self.load()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     return self.load_wsgiapp()
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     return util.import_app(self.app_uri)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     mod = importlib.import_module(module)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:27 1035555-cb64292.tmweb.ru gunicorn[6108]: [2022-10-16 17:18:27 +0300] [6108] [INFO] Worker exiting (pid: 6108)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]: [2022-10-16 17:18:28 +0300] [6109] [INFO] Booting worker with pid: 6109
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]: [2022-10-16 17:18:28 +0300] [6109] [ERROR] Exception in worker process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     worker.init_process()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     self.load_wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     self.callable = self.load()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     return self.load_wsgiapp()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     return util.import_app(self.app_uri)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     mod = importlib.import_module(module)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6109]: [2022-10-16 17:18:28 +0300] [6109] [INFO] Worker exiting (pid: 6109)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]: [2022-10-16 17:18:28 +0300] [6110] [INFO] Booting worker with pid: 6110
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]: [2022-10-16 17:18:28 +0300] [6110] [ERROR] Exception in worker process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     worker.init_process()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     self.load_wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     self.callable = self.load()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     return self.load_wsgiapp()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     return util.import_app(self.app_uri)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     mod = importlib.import_module(module)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6110]: [2022-10-16 17:18:28 +0300] [6110] [INFO] Worker exiting (pid: 6110)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:28 +0300] [6107] [WARNING] Worker with pid 6110 was terminated due to signal 15
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:28 +0300] [6107] [WARNING] Worker with pid 6109 was terminated due to signal 15
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:28 +0300] [6107] [INFO] Shutting down: Master
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6107]: [2022-10-16 17:18:28 +0300] [6107] [INFO] Reason: Worker failed to boot.
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: Started gunicorn daemon.
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: [2022-10-16 17:18:28 +0300] [6111] [INFO] Starting gunicorn 20.1.0
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: [2022-10-16 17:18:28 +0300] [6111] [INFO] Listening at: unix:/run/gunicorn.sock (6111)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: [2022-10-16 17:18:28 +0300] [6111] [INFO] Using worker: sync
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]: [2022-10-16 17:18:28 +0300] [6112] [INFO] Booting worker with pid: 6112
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]: [2022-10-16 17:18:28 +0300] [6112] [ERROR] Exception in worker process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     worker.init_process()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     self.load_wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     self.callable = self.load()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     return self.load_wsgiapp()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     return util.import_app(self.app_uri)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     mod = importlib.import_module(module)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6112]: [2022-10-16 17:18:28 +0300] [6112] [INFO] Worker exiting (pid: 6112)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]: [2022-10-16 17:18:28 +0300] [6113] [INFO] Booting worker with pid: 6113
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]: [2022-10-16 17:18:28 +0300] [6113] [ERROR] Exception in worker process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     worker.init_process()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     self.load_wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     self.callable = self.load()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     return self.load_wsgiapp()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     return util.import_app(self.app_uri)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     mod = importlib.import_module(module)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6113]: [2022-10-16 17:18:28 +0300] [6113] [INFO] Worker exiting (pid: 6113)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 202, in run
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     self.manage_workers()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 551, in manage_workers
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     self.spawn_workers()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 623, in spawn_workers
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     time.sleep(0.1 * random.random())
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     self.reap_workers()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: During handling of the above exception, another exception occurred:
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/bin/gunicorn", line 8, in <module>
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     sys.exit(run())
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 67, in run
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 231, in run
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     super().run()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 72, in run
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     Arbiter(self).run()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 229, in run
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     self.halt(reason=inst.reason, exit_status=inst.exit_status)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 342, in halt
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     self.stop()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 393, in stop
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     time.sleep(0.1)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     self.reap_workers()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]:     raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6111]: gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=1/FAILURE[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: Started gunicorn daemon.
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6114]: [2022-10-16 17:18:28 +0300] [6114] [INFO] Starting gunicorn 20.1.0
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6114]: [2022-10-16 17:18:28 +0300] [6114] [INFO] Listening at: unix:/run/gunicorn.sock (6114)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6114]: [2022-10-16 17:18:28 +0300] [6114] [INFO] Using worker: sync
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]: [2022-10-16 17:18:28 +0300] [6115] [INFO] Booting worker with pid: 6115
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]: [2022-10-16 17:18:28 +0300] [6115] [ERROR] Exception in worker process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]: Traceback (most recent call last):
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     worker.init_process()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     self.load_wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     self.wsgi = self.app.wsgi()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     self.callable = self.load()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     return self.load_wsgiapp()
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     return util.import_app(self.app_uri)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/var/www/muzruk/venv/lib/python3.10/site-packages/gunicorn/util.py", line 359, in import_app
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     mod = importlib.import_module(module)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:     return _bootstrap._gcd_import(name[level:], package, level)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]: ModuleNotFoundError: No module named 'backend.wsgi'
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6115]: [2022-10-16 17:18:28 +0300] [6115] [INFO] Worker exiting (pid: 6115)
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6114]: [2022-10-16 17:18:28 +0300] [6114] [INFO] Shutting down: Master
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru gunicorn[6114]: [2022-10-16 17:18:28 +0300] [6114] [INFO] Reason: Worker failed to boot.
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Start request repeated too quickly.[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m
+Oct 16 17:18:28 1035555-cb64292.tmweb.ru systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gunicorn daemon.[0m
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru systemd[1]: Started gunicorn daemon.
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru gunicorn[6190]: [2022-10-16 17:21:20 +0300] [6190] [INFO] Starting gunicorn 20.1.0
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru gunicorn[6190]: [2022-10-16 17:21:20 +0300] [6190] [INFO] Listening at: unix:/run/gunicorn.sock (6190)
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru gunicorn[6190]: [2022-10-16 17:21:20 +0300] [6190] [INFO] Using worker: sync
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru gunicorn[6191]: [2022-10-16 17:21:20 +0300] [6191] [INFO] Booting worker with pid: 6191
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru gunicorn[6192]: [2022-10-16 17:21:20 +0300] [6192] [INFO] Booting worker with pid: 6192
+Oct 16 17:21:20 1035555-cb64292.tmweb.ru gunicorn[6193]: [2022-10-16 17:21:20 +0300] [6193] [INFO] Booting worker with pid: 6193
+Oct 16 17:21:21 1035555-cb64292.tmweb.ru gunicorn[6191]:  - - [16/Oct/2022:14:21:21 +0000] "GET / HTTP/1.1" 200 10681 "-" "curl/7.81.0"
+Oct 16 17:21:34 1035555-cb64292.tmweb.ru gunicorn[6192]:  - - [16/Oct/2022:14:21:34 +0000] "GET / HTTP/1.1" 200 10681 "-" "curl/7.81.0"
